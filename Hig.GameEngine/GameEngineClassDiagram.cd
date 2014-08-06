@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hig.GameEngine.Counter">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAABAAAAIAAAAAAAAAAAAAAAAAggAAAAAA=</HashCode>
+      <FileName>Counter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Game" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAEAgMACAAAkAQAIAFAADAAAAABAACAQEAAAAAAAQ=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hig.GameEngine.Position">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABQAAAAAAAAAFAAAAAAAAYAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.GameObjects.Cell">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEBAAAAAAgAAAAAEAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>GameObjects\Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.GameObjects.Map">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAhQAAAEABiAAAAEAAAAAAAAAggIAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.GameObjects.StaticObject">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAggAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\StaticObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Hig.GameEngine.GameObjects.Unit">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAAAAAAAAAAAQBAAAAAAAABEAAAAAAEAA=</HashCode>
+      <FileName>GameObjects\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Graphics.Animation">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAAAAAAAAAABAgAAAAAAhQAAAAAAEAA=</HashCode>
+      <FileName>Graphics\Animation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Graphics.PrimitiveBatch" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Struct Name="Hig.GameEngine.Graphics.PrimitiveBatch.Shape" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Graphics\PrimitiveBatch.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AFJAAAAQACAEAAAAAAAAwGAAAAAEEJADAkCEQAAAIAA=</HashCode>
+      <FileName>Graphics\PrimitiveBatch.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hig.GameEngine.Graphics.Sprite">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAABEABAACAEAAAAAAIAgAAAYAk=</HashCode>
+      <FileName>Graphics\Sprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Net.NetworkEventArgs" Collapsed="true">
+    <Position X="1.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Net\NetworkEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Net.Package" Collapsed="true">
+    <Position X="2.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAgAAAAAAAAAAAAAABAAAAEAAAQAAAAAAAAA=</HashCode>
+      <FileName>Net\Package.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hig.GameEngine.Net.TCPClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAEQAAAAEAAAIAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Net\TCPClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hig.GameEngine.Net.TCPServer" Collapsed="true">
+    <Position X="1" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQBAAAAAEAAAAABAAAAKAAAEAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Net\TCPServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Hig.GameEngine.GameObjects.IGameObject">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\IGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Hig.GameEngine.Net.PackageType" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAIAAAIAEAAAA=</HashCode>
+      <FileName>Net\PackageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Hig.GameEngine.Net.NetworkEventHandler" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Net\NetworkEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65D8AA81-CEA4-4455-ADF2-D30C88F04376}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hig.ScriptEngine</RootNamespace>
+    <AssemblyName>Hig.ScriptEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataType.cs" />
+    <Compile Include="DataValue.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="IDataValue.cs" />
+    <Compile Include="IOperand.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="Operations\Address.cs" />
+    <Compile Include="Operations\Assign.cs" />
+    <Compile Include="Operations\CompareOperation.cs" />
+    <Compile Include="Operations\CompareOperationType.cs" />
+    <Compile Include="Operations\Condition.cs" />
+    <Compile Include="Operations\ConditionType.cs" />
+    <Compile Include="Operations\BooleanOperation.cs" />
+    <Compile Include="Operations\BooleanOperationType.cs" />
+    <Compile Include="Operations\Not.cs" />
+    <Compile Include="Operations\DoWhile.cs" />
+    <Compile Include="Operations\Nop.cs" />
+    <Compile Include="Operations\While.cs" />
+    <Compile Include="Operations\Declare.cs" />
+    <Compile Include="Operations\GoTo.cs" />
+    <Compile Include="Operations\Instruction.cs" />
+    <Compile Include="Operations\MathOperation.cs" />
+    <Compile Include="Operations\MathOperationType.cs" />
+    <Compile Include="Operations\OuterOperation.cs" />
+    <Compile Include="Operations\Function.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Script.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hig.Compiler\Hig.Compiler.csproj">
+      <Project>{8E5F87BE-A2ED-4D7D-AAA7-6B1721FBD677}</Project>
+      <Name>Hig.Compiler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
